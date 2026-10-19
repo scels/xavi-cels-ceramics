@@ -100,18 +100,11 @@ h2 {
   letter-spacing: 0;
 }
 
-.wordmark__mark {
-  display: grid;
-  width: 31px;
-  height: 31px;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--clay);
-  color: var(--paper);
-  font-family: var(--serif);
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 1;
+.wordmark__logo {
+  width: 64px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .wordmark__light {
@@ -149,8 +142,7 @@ h2 {
   content: "+";
 }
 
-.nav-dropdown:hover > .nav-dropdown__trigger,
-.nav-dropdown:focus-within > .nav-dropdown__trigger {
+.nav-dropdown[data-open="true"] > .nav-dropdown__trigger {
   color: var(--clay);
 }
 
@@ -181,8 +173,7 @@ h2 {
   content: "";
 }
 
-.nav-dropdown:hover .nav-dropdown__menu,
-.nav-dropdown:focus-within .nav-dropdown__menu {
+.nav-dropdown[data-open="true"] .nav-dropdown__menu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
