@@ -81,6 +81,10 @@ export const dictionaries = {
       technique: "Técnica",
       open: "Descubrir",
       view: "Ver",
+      gallery: "galería de imágenes",
+      previousImage: "Ver imagen anterior",
+      nextImage: "Ver imagen siguiente",
+      selectImage: "Ver imagen",
     },
     workshop: {
       eyebrow: "El proceso de Xavier Cels",
@@ -219,6 +223,10 @@ export const dictionaries = {
       technique: "Tècnica",
       open: "Descobreix",
       view: "Veure",
+      gallery: "galeria d'imatges",
+      previousImage: "Veure la imatge anterior",
+      nextImage: "Veure la imatge següent",
+      selectImage: "Veure la imatge",
     },
     workshop: {
       eyebrow: "El procés de Xavier Cels",
@@ -357,6 +365,10 @@ export const dictionaries = {
       technique: "Technique",
       open: "Discover",
       view: "View",
+      gallery: "image gallery",
+      previousImage: "View previous image",
+      nextImage: "View next image",
+      selectImage: "View image",
     },
     workshop: {
       eyebrow: "Xavier Cels' process",

@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { ProductGallery } from "@/components/store/ProductGallery";
 import {
   dictionaries,
   isLocale,
@@ -49,7 +49,6 @@ export default async function ProductPage({
 
   const name = getLocalizedValue(product.name, locale);
   const description = getLocalizedValue(product.description, locale);
-  const mainImage = product.images[0];
   const formatPrice = (price: number) =>
     new Intl.NumberFormat(locale, {
       style: "currency",
@@ -62,17 +61,12 @@ export default async function ProductPage({
         <span aria-hidden="true">←</span> {copy.product.back}
       </Link>
       <article className="product-detail">
-        <div className="product-detail__image">
-          {mainImage?.url ? (
-            <Image
-              alt={getLocalizedValue(mainImage.alt, locale)}
-              fill
-              priority
-              sizes="(max-width: 760px) 100vw, 55vw"
-              src={mainImage.url}
-            />
-          ) : null}
-        </div>
+        <ProductGallery
+          images={product.images}
+          locale={locale}
+          productName={name}
+          variant="detail"
+        />
         <div className="product-detail__copy">
           <p className="eyebrow">
             {product.category

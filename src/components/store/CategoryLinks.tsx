@@ -8,9 +8,15 @@ type CategoryLinksProps = {
   categories: Category[];
   locale: Locale;
   parentSlug?: string;
+  includeDescendants?: boolean;
 };
 
-export function CategoryLinks({ categories, locale, parentSlug }: CategoryLinksProps) {
+export function CategoryLinks({
+  categories,
+  locale,
+  parentSlug,
+  includeDescendants = true,
+}: CategoryLinksProps) {
   const children = categories.filter((category) => category.parent?.slug === parentSlug);
 
   if (!children.length) return null;
@@ -22,7 +28,14 @@ export function CategoryLinks({ categories, locale, parentSlug }: CategoryLinksP
           <Link href={localizedPath(locale, `tienda/categoria/${category.slug}`)}>
             {getLocalizedValue(category.name, locale)}
           </Link>
-          <CategoryLinks categories={categories} locale={locale} parentSlug={category.slug} />
+          {includeDescendants ? (
+            <CategoryLinks
+              categories={categories}
+              includeDescendants
+              locale={locale}
+              parentSlug={category.slug}
+            />
+          ) : null}
         </li>
       ))}
     </ul>

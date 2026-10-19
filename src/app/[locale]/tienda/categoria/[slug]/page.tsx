@@ -73,25 +73,35 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <h1>{categoryName}</h1>
         <p>{copy.shop.categoryIntro}</p>
       </section>
-      {hasChildren ? (
-        <nav aria-label={copy.navigation.categories} className="category-links">
-          <CategoryLinks categories={categories} locale={locale} parentSlug={slug} />
-        </nav>
-      ) : null}
-      <section
-        aria-label={categoryName}
-        className="catalog-section"
-      >
-        {categoryProducts.length ? (
-          <div className="product-grid">
-            {categoryProducts.map((product) => (
-              <ProductCard key={product.slug} locale={locale} product={product} />
-            ))}
-          </div>
-        ) : (
-          <p>{copy.shop.empty}</p>
-        )}
-      </section>
+      <div className={hasChildren ? "catalog-layout catalog-layout--filtered" : "catalog-layout"}>
+        {hasChildren ? (
+          <aside className="category-filter">
+            <p className="eyebrow">{copy.navigation.categories}</p>
+            <nav
+              aria-label={copy.navigation.categories}
+              className="category-filter__links"
+            >
+              <CategoryLinks
+                categories={categories}
+                includeDescendants={false}
+                locale={locale}
+                parentSlug={slug}
+              />
+            </nav>
+          </aside>
+        ) : null}
+        <section aria-label={categoryName} className="catalog-section">
+          {categoryProducts.length ? (
+            <div className="product-grid">
+              {categoryProducts.map((product) => (
+                <ProductCard key={product.slug} locale={locale} product={product} />
+              ))}
+            </div>
+          ) : (
+            <p>{copy.shop.empty}</p>
+          )}
+        </section>
+      </div>
     </div>
   );
 }
