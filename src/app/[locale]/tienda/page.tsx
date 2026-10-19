@@ -41,7 +41,11 @@ export default async function StorePage({ params }: StorePageProps) {
       </section>
       {categories.length ? (
         <nav aria-label={copy.navigation.categories} className="category-links">
-          <CategoryLinks categories={categories} locale={locale} />
+          <CategoryLinks
+            categories={categories}
+            includeDescendants={false}
+            locale={locale}
+          />
         </nav>
       ) : null}
       <section aria-label={copy.shop.collectionAlt} className="catalog-section">
