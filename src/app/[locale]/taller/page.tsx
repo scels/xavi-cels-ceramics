@@ -90,7 +90,7 @@ export default async function WorkshopPage({ params }: WorkshopPageProps) {
               alt={copy.workshop.piecesAlt}
               fill
               sizes="(max-width: 640px) 50vw, 30vw"
-              src="/images/productos_boles.jpeg"
+              src="/images/torn_xavi.jpeg"
             />
           </div>
           <div>
@@ -98,7 +98,7 @@ export default async function WorkshopPage({ params }: WorkshopPageProps) {
               alt={copy.workshop.piecesDetailAlt}
               fill
               sizes="(max-width: 640px) 50vw, 30vw"
-              src="/images/productos_v2.jpeg"
+              src="/images/peces_seques.jpeg"
             />
           </div>
         </div>

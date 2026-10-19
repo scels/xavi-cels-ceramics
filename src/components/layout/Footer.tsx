@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { dictionaries, localizedPath, type Locale } from "@/lib/i18n/dictionaries";
@@ -18,7 +19,14 @@ export function Footer({ locale }: FooterProps) {
             className="wordmark wordmark--footer"
             href={localizedPath(locale)}
           >
-            <span aria-hidden="true" className="wordmark__mark">XC</span>
+            <Image
+              alt=""
+              className="wordmark__logo"
+              height={214}
+              sizes="64px"
+              src="/images/logo.png"
+              width={289}
+            />
             <span>{copy.site.brand}</span>
           </Link>
           <p>{copy.footer.tagline}</p>

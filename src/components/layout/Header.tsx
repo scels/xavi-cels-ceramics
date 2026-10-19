@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
+import { NavDropdown } from "@/components/layout/NavDropdown";
 import { CategoryLinks } from "@/components/store/CategoryLinks";
 import { dictionaries, localizedPath, type Locale } from "@/lib/i18n/dictionaries";
 import { getCategories } from "@/sanity/lib/data";
@@ -21,12 +23,20 @@ export async function Header({ locale }: HeaderProps) {
           className="wordmark"
           href={localizedPath(locale)}
         >
-          <span aria-hidden="true" className="wordmark__mark">XC</span>
+          <Image
+            alt=""
+            className="wordmark__logo"
+            height={214}
+            loading="eager"
+            sizes="64px"
+            src="/images/logo.png"
+            width={289}
+          />
           <span>{copy.site.brand}</span>
         </Link>
         <div className="header-tools">
           <nav aria-label={copy.navigation.label} className="main-nav">
-            <div className="nav-dropdown">
+            <NavDropdown>
               <Link
                 className="nav-dropdown__trigger"
                 href={localizedPath(locale, "tienda")}
@@ -40,7 +50,7 @@ export async function Header({ locale }: HeaderProps) {
               >
                 <CategoryLinks categories={categories} locale={locale} />
               </div>
-            </div>
+            </NavDropdown>
             <Link href={localizedPath(locale, "taller")}>
               {copy.navigation.workshop}
             </Link>

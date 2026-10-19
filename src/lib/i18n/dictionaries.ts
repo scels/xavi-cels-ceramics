@@ -130,9 +130,9 @@ export const dictionaries = {
       intro:
         "¿Quieres una pieza, un encargo a medida o simplemente saber más? Escríbeme y te responderé lo antes posible.",
       panelEyebrow: "Encargos",
-      panelTitle: "Vajilla a medida",
+      panelTitle: "Piezas a medida",
       panelBody:
-        "Hago vajillas completas para bodas, restaurantes y casas que quieren una mesa con carácter. Cuéntame qué tienes en mente: cuántas piezas, qué colores y para cuándo las necesitas, y preparamos juntos una propuesta.",
+        "Creo vajillas completas para bodas, restaurantes y hogares que buscan una mesa con personalidad. También realizo encargos de piezas personalizadas y colaboro en proyectos concretos, dando forma a ideas y propuestas únicas. Cuéntame qué tienes en mente: qué piezas necesitas, qué colores te gustan y para qué ocasión o proyecto son. Juntos podemos diseñar una propuesta a medida, adaptada a tus ideas y necesidades.",
       link: "Escríbeme por Instagram",
       linkUrl: "https://www.instagram.com/xavicels_ceramics/",
       channelsLabel: "Formas de contactar",
@@ -141,7 +141,7 @@ export const dictionaries = {
       phoneLabel: "Teléfono",
       phoneNote: "Si prefieres hablar, puedes llamarme directamente.",
       imageAlt: "Proceso de elaboración de boles de gres en el taller",
-      image: "/images/collage_proceso_bol.jpeg",
+      image: "/images/xavi_cels.jpeg",
     },
     footer: {
       tagline: "Hecho a mano, pieza a pieza.",
@@ -268,9 +268,9 @@ export const dictionaries = {
       intro:
         "Vols una peça, un encàrrec a mida o simplement saber-ne més? Escriu-me i et respondré tan aviat com pugui.",
       panelEyebrow: "Encàrrecs",
-      panelTitle: "Vaixella a mida",
+      panelTitle: "Peces a mida",
       panelBody:
-        "Faig vaixelles completes per a casaments, restaurants i cases que volen una taula amb caràcter. Explica'm què tens al cap: quantes peces, quins colors i per a quan les necessites, i preparem junts una proposta.",
+        "Creo vaixelles completes per a casaments, restaurants i llars que busquen una taula amb personalitat. També faig encàrrecs de peces personalitzades i col·laboro en projectes concrets, donant forma a idees i propostes úniques. Explica’m què tens al cap: quines peces necessites, quins colors t’agraden i per a quina ocasió o projecte són. Junts podem dissenyar una proposta a mida, adaptada a les teves idees i necessitats.",
       link: "Escriu-me per Instagram",
       linkUrl: "https://www.instagram.com/xavicels_ceramics/",
       channelsLabel: "Maneres de contactar",
@@ -279,7 +279,7 @@ export const dictionaries = {
       phoneLabel: "Telèfon",
       phoneNote: "Si prefereixes parlar, pots trucar-me directament.",
       imageAlt: "Procés d'elaboració de bols de gres al taller",
-      image: "/images/collage_proceso_bol.jpeg",
+      image: "/images/xavi_cels.jpeg",
     },
     footer: {
       tagline: "Fet a mà, peça a peça.",
@@ -406,9 +406,9 @@ export const dictionaries = {
       intro:
         "Interested in a piece, a custom commission, or just want to know more? Get in touch and I'll reply as soon as I can.",
       panelEyebrow: "Commissions",
-      panelTitle: "Custom tableware",
+      panelTitle: "Custom pieces",
       panelBody:
-        "I make full tableware sets for weddings, restaurants and homes that want a table with character. Tell me what you have in mind — how many pieces, which colours and when you need them — and we'll put together a proposal.",
+        "I create complete tableware collections for weddings, restaurants and homes looking to bring character to the table. I also take commissions for bespoke pieces and collaborate on specific projects, bringing unique ideas and concepts to life. Tell me what you have in mind: which pieces you need, which colours you like, and what occasion or project they’re for. Together, we can develop a bespoke proposal tailored to your ideas and needs.",
       link: "Message me on Instagram",
       linkUrl: "https://www.instagram.com/xavicels_ceramics/",
       channelsLabel: "Ways to get in touch",
@@ -417,7 +417,7 @@ export const dictionaries = {
       phoneLabel: "Phone",
       phoneNote: "If you prefer to talk, you can call me directly.",
       imageAlt: "Stoneware bowl-making process in the studio",
-      image: "/images/collage_proceso_bol.jpeg",
+      image: "/images/xavi_cels.jpeg",
     },
     footer: {
       tagline: "Handmade, one piece at a time.",
